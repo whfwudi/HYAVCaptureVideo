@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F654BE7A1D1B8A73004793AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE791D1B8A73004793AC /* main.m */; };
+		F654BE7D1D1B8A73004793AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE7C1D1B8A73004793AC /* AppDelegate.m */; };
+		F654BE801D1B8A73004793AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE7F1D1B8A73004793AC /* ViewController.m */; };
+		F654BE831D1B8A73004793AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F654BE811D1B8A73004793AC /* Main.storyboard */; };
+		F654BE851D1B8A73004793AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F654BE841D1B8A73004793AC /* Assets.xcassets */; };
+		F654BE881D1B8A73004793AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F654BE861D1B8A73004793AC /* LaunchScreen.storyboard */; };
+		F654BE931D1B8A73004793AC /* HYAVCaptureVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE921D1B8A73004793AC /* HYAVCaptureVideoTests.m */; };
+		F654BE9E1D1B8AB5004793AC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654BE9D1D1B8AB5004793AC /* CoreMedia.framework */; };
+		F654BEA01D1B8ABF004793AC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654BE9F1D1B8ABF004793AC /* CoreVideo.framework */; };
+		F654BEA21D1B8AC8004793AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654BEA11D1B8AC8004793AC /* QuartzCore.framework */; };
+		F654BEA41D1B8ACF004793AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654BEA31D1B8ACF004793AC /* AVFoundation.framework */; };
+		F654BEA61D1B9330004793AC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654BEA51D1B9330004793AC /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F654BE8F1D1B8A73004793AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F654BE6D1D1B8A73004793AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F654BE741D1B8A73004793AC;
+			remoteInfo = HYAVCaptureVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F654BE751D1B8A73004793AC /* HYAVCaptureVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYAVCaptureVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F654BE791D1B8A73004793AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F654BE7B1D1B8A73004793AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F654BE7C1D1B8A73004793AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F654BE7E1D1B8A73004793AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F654BE7F1D1B8A73004793AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F654BE821D1B8A73004793AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F654BE841D1B8A73004793AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F654BE871D1B8A73004793AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F654BE891D1B8A73004793AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F654BE8E1D1B8A73004793AC /* HYAVCaptureVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYAVCaptureVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F654BE921D1B8A73004793AC /* HYAVCaptureVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYAVCaptureVideoTests.m; sourceTree = "<group>"; };
+		F654BE941D1B8A73004793AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F654BE9D1D1B8AB5004793AC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F654BE9F1D1B8ABF004793AC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F654BEA11D1B8AC8004793AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F654BEA31D1B8ACF004793AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F654BEA51D1B9330004793AC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F654BE721D1B8A73004793AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F654BEA61D1B9330004793AC /* ImageIO.framework in Frameworks */,
+				F654BEA41D1B8ACF004793AC /* AVFoundation.framework in Frameworks */,
+				F654BEA21D1B8AC8004793AC /* QuartzCore.framework in Frameworks */,
+				F654BEA01D1B8ABF004793AC /* CoreVideo.framework in Frameworks */,
+				F654BE9E1D1B8AB5004793AC /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F654BE8B1D1B8A73004793AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F654BE6C1D1B8A73004793AC = {
+			isa = PBXGroup;
+			children = (
+				F654BEA51D1B9330004793AC /* ImageIO.framework */,
+				F654BEA31D1B8ACF004793AC /* AVFoundation.framework */,
+				F654BEA11D1B8AC8004793AC /* QuartzCore.framework */,
+				F654BE9F1D1B8ABF004793AC /* CoreVideo.framework */,
+				F654BE9D1D1B8AB5004793AC /* CoreMedia.framework */,
+				F654BE771D1B8A73004793AC /* HYAVCaptureVideo */,
+				F654BE911D1B8A73004793AC /* HYAVCaptureVideoTests */,
+				F654BE761D1B8A73004793AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F654BE761D1B8A73004793AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F654BE751D1B8A73004793AC /* HYAVCaptureVideo.app */,
+				F654BE8E1D1B8A73004793AC /* HYAVCaptureVideoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F654BE771D1B8A73004793AC /* HYAVCaptureVideo */ = {
+			isa = PBXGroup;
+			children = (
+				F654BE7B1D1B8A73004793AC /* AppDelegate.h */,
+				F654BE7C1D1B8A73004793AC /* AppDelegate.m */,
+				F654BE7E1D1B8A73004793AC /* ViewController.h */,
+				F654BE7F1D1B8A73004793AC /* ViewController.m */,
+				F654BE811D1B8A73004793AC /* Main.storyboard */,
+				F654BE841D1B8A73004793AC /* Assets.xcassets */,
+				F654BE861D1B8A73004793AC /* LaunchScreen.storyboard */,
+				F654BE891D1B8A73004793AC /* Info.plist */,
+				F654BE781D1B8A73004793AC /* Supporting Files */,
+			);
+			path = HYAVCaptureVideo;
+			sourceTree = "<group>";
+		};
+		F654BE781D1B8A73004793AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F654BE791D1B8A73004793AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F654BE911D1B8A73004793AC /* HYAVCaptureVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F654BE921D1B8A73004793AC /* HYAVCaptureVideoTests.m */,
+				F654BE941D1B8A73004793AC /* Info.plist */,
+			);
+			path = HYAVCaptureVideoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F654BE741D1B8A73004793AC /* HYAVCaptureVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F654BE971D1B8A73004793AC /* Build configuration list for PBXNativeTarget "HYAVCaptureVideo" */;
+			buildPhases = (
+				F654BE711D1B8A73004793AC /* Sources */,
+				F654BE721D1B8A73004793AC /* Frameworks */,
+				F654BE731D1B8A73004793AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYAVCaptureVideo;
+			productName = HYAVCaptureVideo;
+			productReference = F654BE751D1B8A73004793AC /* HYAVCaptureVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F654BE8D1D1B8A73004793AC /* HYAVCaptureVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F654BE9A1D1B8A73004793AC /* Build configuration list for PBXNativeTarget "HYAVCaptureVideoTests" */;
+			buildPhases = (
+				F654BE8A1D1B8A73004793AC /* Sources */,
+				F654BE8B1D1B8A73004793AC /* Frameworks */,
+				F654BE8C1D1B8A73004793AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F654BE901D1B8A73004793AC /* PBXTargetDependency */,
+			);
+			name = HYAVCaptureVideoTests;
+			productName = HYAVCaptureVideoTests;
+			productReference = F654BE8E1D1B8A73004793AC /* HYAVCaptureVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F654BE6D1D1B8A73004793AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HY;
+				TargetAttributes = {
+					F654BE741D1B8A73004793AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5M3957QXM4;
+					};
+					F654BE8D1D1B8A73004793AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F654BE741D1B8A73004793AC;
+					};
+				};
+			};
+			buildConfigurationList = F654BE701D1B8A73004793AC /* Build configuration list for PBXProject "HYAVCaptureVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F654BE6C1D1B8A73004793AC;
+			productRefGroup = F654BE761D1B8A73004793AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F654BE741D1B8A73004793AC /* HYAVCaptureVideo */,
+				F654BE8D1D1B8A73004793AC /* HYAVCaptureVideoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F654BE731D1B8A73004793AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F654BE881D1B8A73004793AC /* LaunchScreen.storyboard in Resources */,
+				F654BE851D1B8A73004793AC /* Assets.xcassets in Resources */,
+				F654BE831D1B8A73004793AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F654BE8C1D1B8A73004793AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F654BE711D1B8A73004793AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F654BE801D1B8A73004793AC /* ViewController.m in Sources */,
+				F654BE7D1D1B8A73004793AC /* AppDelegate.m in Sources */,
+				F654BE7A1D1B8A73004793AC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F654BE8A1D1B8A73004793AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F654BE931D1B8A73004793AC /* HYAVCaptureVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F654BE901D1B8A73004793AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F654BE741D1B8A73004793AC /* HYAVCaptureVideo */;
+			targetProxy = F654BE8F1D1B8A73004793AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F654BE811D1B8A73004793AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F654BE821D1B8A73004793AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F654BE861D1B8A73004793AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F654BE871D1B8A73004793AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F654BE951D1B8A73004793AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F654BE961D1B8A73004793AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F654BE981D1B8A73004793AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HYAVCaptureVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colors.HYAVCaptureVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F654BE991D1B8A73004793AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HYAVCaptureVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colors.HYAVCaptureVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		F654BE9B1D1B8A73004793AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HYAVCaptureVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colors.HYAVCaptureVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYAVCaptureVideo.app/HYAVCaptureVideo";
+			};
+			name = Debug;
+		};
+		F654BE9C1D1B8A73004793AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HYAVCaptureVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colors.HYAVCaptureVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYAVCaptureVideo.app/HYAVCaptureVideo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F654BE701D1B8A73004793AC /* Build configuration list for PBXProject "HYAVCaptureVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F654BE951D1B8A73004793AC /* Debug */,
+				F654BE961D1B8A73004793AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F654BE971D1B8A73004793AC /* Build configuration list for PBXNativeTarget "HYAVCaptureVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F654BE981D1B8A73004793AC /* Debug */,
+				F654BE991D1B8A73004793AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F654BE9A1D1B8A73004793AC /* Build configuration list for PBXNativeTarget "HYAVCaptureVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F654BE9B1D1B8A73004793AC /* Debug */,
+				F654BE9C1D1B8A73004793AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F654BE6D1D1B8A73004793AC /* Project object */;
+}
