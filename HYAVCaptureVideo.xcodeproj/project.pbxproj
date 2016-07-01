@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61D88381D261D94008EE239 /* 圆.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D88341D261D94008EE239 /* 圆.png */; };
+		F61D88391D261D94008EE239 /* 圆@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D88351D261D94008EE239 /* 圆@2x.png */; };
+		F61D883A1D261D94008EE239 /* 拍照.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D88361D261D94008EE239 /* 拍照.png */; };
+		F61D883B1D261D94008EE239 /* 拍照@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D88371D261D94008EE239 /* 拍照@2x.png */; };
 		F654BE7A1D1B8A73004793AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE791D1B8A73004793AC /* main.m */; };
 		F654BE7D1D1B8A73004793AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE7C1D1B8A73004793AC /* AppDelegate.m */; };
 		F654BE801D1B8A73004793AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F654BE7F1D1B8A73004793AC /* ViewController.m */; };
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61D88341D261D94008EE239 /* 圆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆.png"; sourceTree = "<group>"; };
+		F61D88351D261D94008EE239 /* 圆@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆@2x.png"; sourceTree = "<group>"; };
+		F61D88361D261D94008EE239 /* 拍照.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照.png"; sourceTree = "<group>"; };
+		F61D88371D261D94008EE239 /* 拍照@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照@2x.png"; sourceTree = "<group>"; };
 		F654BE751D1B8A73004793AC /* HYAVCaptureVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYAVCaptureVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F654BE791D1B8A73004793AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F654BE7B1D1B8A73004793AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,7 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F654BE6C1D1B8A73004793AC = {
+		F61D88331D261D94008EE239 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F61D88341D261D94008EE239 /* 圆.png */,
+				F61D88351D261D94008EE239 /* 圆@2x.png */,
+				F61D88361D261D94008EE239 /* 拍照.png */,
+				F61D88371D261D94008EE239 /* 拍照@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F61D883C1D261DA0008EE239 /* framework */ = {
 			isa = PBXGroup;
 			children = (
 				F654BEA51D1B9330004793AC /* ImageIO.framework */,
@@ -83,6 +102,13 @@
 				F654BEA11D1B8AC8004793AC /* QuartzCore.framework */,
 				F654BE9F1D1B8ABF004793AC /* CoreVideo.framework */,
 				F654BE9D1D1B8AB5004793AC /* CoreMedia.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		F654BE6C1D1B8A73004793AC = {
+			isa = PBXGroup;
+			children = (
 				F654BE771D1B8A73004793AC /* HYAVCaptureVideo */,
 				F654BE911D1B8A73004793AC /* HYAVCaptureVideoTests */,
 				F654BE761D1B8A73004793AC /* Products */,
@@ -101,6 +127,8 @@
 		F654BE771D1B8A73004793AC /* HYAVCaptureVideo */ = {
 			isa = PBXGroup;
 			children = (
+				F61D883C1D261DA0008EE239 /* framework */,
+				F61D88331D261D94008EE239 /* images */,
 				F654BE7B1D1B8A73004793AC /* AppDelegate.h */,
 				F654BE7C1D1B8A73004793AC /* AppDelegate.m */,
 				F654BE7E1D1B8A73004793AC /* ViewController.h */,
@@ -213,7 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F654BE881D1B8A73004793AC /* LaunchScreen.storyboard in Resources */,
+				F61D883A1D261D94008EE239 /* 拍照.png in Resources */,
 				F654BE851D1B8A73004793AC /* Assets.xcassets in Resources */,
+				F61D88381D261D94008EE239 /* 圆.png in Resources */,
+				F61D883B1D261D94008EE239 /* 拍照@2x.png in Resources */,
+				F61D88391D261D94008EE239 /* 圆@2x.png in Resources */,
 				F654BE831D1B8A73004793AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +461,7 @@
 				F654BE991D1B8A73004793AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F654BE9A1D1B8A73004793AC /* Build configuration list for PBXNativeTarget "HYAVCaptureVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +470,7 @@
 				F654BE9C1D1B8A73004793AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

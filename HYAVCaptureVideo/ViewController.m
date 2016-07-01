@@ -61,6 +61,13 @@
     self.customLayer.contentsGravity = kCAGravityResizeAspectFill;
     [self.view.layer addSublayer:self.customLayer];
     
+    UIButton *startBtn = [[UIButton alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 70) / 2, self.view.frame.size.height - 100, 70, 70)];
+    [startBtn setImage:[UIImage imageNamed:@"圆"] forState:UIControlStateNormal];
+    [startBtn setImage:[UIImage imageNamed:@"拍照"] forState:UIControlStateSelected];
+    startBtn.layer.cornerRadius = startBtn.frame.size.height / 2;
+    [startBtn addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:startBtn];
+    
     self.imageView = [[UIImageView alloc] init];
     self.imageView.frame = CGRectMake(0, 20, self.view.frame.size.width / 3, self.view.frame.size.height / 3);
     [self.view addSubview:self.imageView];
@@ -114,12 +121,58 @@
         NSDictionary *exifMetadata = [[metadata objectForKey:(NSString *)kCGImagePropertyExifDictionary] mutableCopy];
         float brightnessValue = [[exifMetadata objectForKey:(NSString *)kCGImagePropertyExifBrightnessValue] floatValue];
         
-        [device lockForConfiguration:nil];
-        [device setTorchMode:brightnessValue > 1 ? AVCaptureTorchModeOff : AVCaptureTorchModeOn];
-        [device unlockForConfiguration];
+//        [device lockForConfiguration:nil];
+//        [device setTorchMode:brightnessValue > 1 ? AVCaptureTorchModeOff : AVCaptureTorchModeOn];
+//        [device unlockForConfiguration];
 
         [self.brightnessLabel performSelectorOnMainThread:@selector(setText:) withObject:[NSString stringWithFormat:@"%.2f",brightnessValue] waitUntilDone:YES];
+        
+//        [self combineWithLeftImage:image rightImage:image];
     }
+}
+
+- (IBAction)takePhoto:(id)sender
+{
+    if (self.captureSession.isRunning) {
+        [self.captureSession stopRunning];
+    }else {
+        [self.captureSession startRunning];
+    }
+    UIButton *btn = (UIButton *)sender;
+    btn.selected = !btn.selected;
+}
+
+- (void)combineWithLeftImage:(UIImage*)leftImage rightImage:(UIImage*)rightImage
+{
+    CGFloat width = leftImage.size.width * 2;
+    CGFloat height = leftImage.size.height;
+    CGSize offScreenSize = CGSizeMake(width, height);
+    
+    UIGraphicsBeginImageContext(offScreenSize);
+    
+    CGRect rect = CGRectMake(0, 0, width/2, height);
+    [leftImage drawInRect:rect];
+    
+    rect.origin.x += width / 2;
+    [rightImage drawInRect:rect];
+    
+    UIImage* imagez = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    [self saveImageToPhotos:imagez];
+}
+
+- (void)saveImageToPhotos:(UIImage*)savedImage
+{
+    UIImageWriteToSavedPhotosAlbum(savedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+}
+
+// 指定回调方法
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    NSString *msg = (error != NULL) ? @"保存图片失败" : @"保存图片成功" ;
+    NSLog(@"%@",msg);
 }
 
 - (void)didReceiveMemoryWarning {
